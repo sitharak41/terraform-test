@@ -22,8 +22,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'Sitharatest2 Docker hub'
-        repository: 'Terraform/Dockerimage'
+        containerRegistry: 'Dockerserviceconnection'
+        repository: 'Terraformtest'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
