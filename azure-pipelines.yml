@@ -25,7 +25,7 @@ stages:
         containerRegistry: 'Dockerserviceconnection'
         repository: 'deckerimage repo'
         command: 'buildAndPush'
-        Dockerfile: '.pipeline/Dockerfile'
+        Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
     
