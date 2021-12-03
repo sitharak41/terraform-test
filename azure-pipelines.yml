@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'Dockerserviceconnection'
-        repository: 'dockerimage'
+        repository: 'deckerimage repo'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
